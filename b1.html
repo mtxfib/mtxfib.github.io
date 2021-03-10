@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>2 PC direct connection using cable</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<h1>2 PC direct connection using cable</h1>
+	<h2>Instruction</h2>
+	  	<article>
+			  <h3>Preparation</h3>
+			  <par>Connect 2 PC using cables. Make sure the cable is reliable. Use Cat-5e or Cat-6 cable if possible.</par>
+				<br/>
+			  <h3>Assume both computer run Windows system.</h3>
+				<h4>For PC-1</h4>
+				<par>Go to Control Panel/Network and Internet/Network and Sharing Center</par>
+				<br/>
+				<par>On the left of the current page, go to "Change adapter settings"</par>
+				<br/>
+				<par>right click Ethernet, go to property</par>
+				<br/>
+				<par>double click TCP/IPv4</par>
+				<br/>
+				<par>select use the following ip address. fill in</par>
+				<br/>
+				<par>ip address: 192.168.0.1</par>
+				<br/>
+				<par>subnet mask: 255.255.255.0</par>
+				<br/>
+				<par>default gate way: 192.168.0.1</par>
+				<br/>
+				<par>now you are good for network setting</par>
+				<br/>
+				<par>Next to to windows defender setting, turn off all firewalls</par>
+				<br/>
+				<par>remember what you did, you need to turn on the firewall to gain protection after you finished direct connect</par>
+				<br/>
+				<par>to transfer file, you may either use windows file sharing feature(which i do not recommend), or use a ftp server. For more information about how to set a ftp server on your computer, please use filezilla ftp server, it's very simple to set up</par>
+				<br/>
+
+				<h4>For PC-2</h4>
+				<par>go to IPv4 setting, fill in</par>
+				<br/>
+				<par>ip address: 192.168.0.2</par>
+				<br/>
+				<par>subnet mask: 255.255.255.0</par>
+				<br/>
+				<par>default gate way: 192.168.0.1</par>
+				<br/>
+				<par>assume you have ftp server active on PC-1, you may access the file on PC-1 like the following:</par>
+				<br/>
+				<par>return to desktop, go to this pc. on the left list you will find this pc, right click it and go to add network location. Then you follow the instructions to get access to ftp server.</par>
+				<br/>
+			</article>
+		
+</body>
+	
+</html>
